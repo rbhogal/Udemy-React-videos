@@ -8,7 +8,7 @@ export default class App extends React.Component {
   state = { videos: [], selectedVideo: null };
 
   componentDidMount() {
-    this.onTermSubmit('')
+    this.onTermSubmit('');
   }
 
   onTermSubmit = async term => {
@@ -30,7 +30,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className="ui container">
+      <div className="ui container" style={{ marginTop: '20px' }}>
         <SearchBar onFormSubmit={this.onTermSubmit} />
 
         <div className="ui grid">
